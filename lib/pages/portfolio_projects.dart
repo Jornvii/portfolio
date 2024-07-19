@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'contact_icons.dart';
-import 'hover_animation.dart';
-import 'project_card.dart'; // Import the updated ProjectCard
+
+import '../styles/hover_animation.dart';
+import '../widgets/project_card.dart'; // Import the updated ProjectCard
 
 class PortfolioProjects extends StatelessWidget {
   @override
@@ -27,7 +27,7 @@ class PortfolioProjects extends StatelessWidget {
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&s",
                   ),
                   description: 'Description of Project 1',
-                  projectUrl: 'https://www.youtube.com/',
+                  projectUrl: 'https://github.com/Jornvii',
                 ),
               ),
               HoverAnimation(
@@ -36,7 +36,7 @@ class PortfolioProjects extends StatelessWidget {
                   img: const NetworkImage(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&s"),
                   description: 'Description of Project 2',
-                  projectUrl: 'https://www.google.com/',
+                  projectUrl: 'https://github.com/Jornvii',
                 ),
               ),
               HoverAnimation(
@@ -45,7 +45,7 @@ class PortfolioProjects extends StatelessWidget {
                   img: const NetworkImage(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&s"),
                   description: 'Description of Project 2',
-                  projectUrl: 'https://www.google.com/',
+                  projectUrl: 'https://github.com/Jornvii',
                 ),
               ),
               HoverAnimation(
@@ -54,7 +54,7 @@ class PortfolioProjects extends StatelessWidget {
                   img: const NetworkImage(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&s"),
                   description: 'Description of Project 2',
-                  projectUrl: 'https://www.google.com/',
+                  projectUrl: 'https://github.com/Jornvii',
                 ),
               ),
             ],

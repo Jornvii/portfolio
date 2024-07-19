@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'circular_image_hover.dart';
+import '../styles/circular_image_hover.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({super.key});
@@ -32,21 +32,55 @@ class AboutMe extends StatelessWidget {
                 children: [
                   Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      'Hello! I am Mr. Dorm, from Business Computer Team of MBS.',
-                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Hello! I am ',
+                            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                          ),
+                          TextSpan(
+                            text: 'Mr. Dorm',
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.blue, // Color for Mr. Dorm
+                            ),
+                          ),
+                          TextSpan(
+                            text: ', from Business Computer Team of ',
+                            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                          ),
+                          TextSpan(
+                            text: 'MBS',
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.red, // Color for MBS
+                            ),
+                          ),
+                          TextSpan(
+                            text: '.',
+                            style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
+                  
                   Text(
                     'As a web and mobile app developer with a passion for creating beautiful and functional applications. I love exploring new technologies and improving my skills.',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
                   ),
+                  // EducationPage(),
                 ],
               ),
             ),
+            
           ],
         ),
       ),
     );
   }
+
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'hover_icon.dart'; // Import HoverIcon widget
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../styles/hover_icon.dart'; // Import HoverIcon widget
 
 class ContactIcons extends StatelessWidget {
   @override

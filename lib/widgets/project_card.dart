@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/hover_animation.dart';
+import 'package:flutter_application_3/styles/hover_animation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatelessWidget {
@@ -41,7 +41,7 @@ class ProjectCard extends StatelessWidget {
             HoverAnimation(
               child: TextButton(
                 onPressed: () {
-                  _launchURL('https://github.com/Jornvii/portfolio');
+                  _launchURL(projectUrl);
                 },
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
