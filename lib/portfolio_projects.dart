@@ -9,11 +9,11 @@ class PortfolioProjects extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
             'Portfolio Projects',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 34, fontWeight: FontWeight.w900),
           ),
           const SizedBox(height: 8),
           Wrap(
