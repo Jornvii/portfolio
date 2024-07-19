@@ -4,11 +4,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatelessWidget {
   final String title;
+  final NetworkImage img;
   final String description;
   final String projectUrl;
 
   ProjectCard(
       {required this.title,
+      required this.img,
       required this.description,
       required this.projectUrl});
 
@@ -18,7 +20,9 @@ class ProjectCard extends StatelessWidget {
       elevation: 4,
       child: Container(
         padding: const EdgeInsets.all(16.0),
-        width: 200,
+        width: 350,
+        // height: 380,
+        color: Color.fromARGB(104, 255, 193, 7),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,6 +30,8 @@ class ProjectCard extends StatelessWidget {
               title,
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+            const SizedBox(height: 8),
+            Image(image: img),
             const SizedBox(height: 8),
             Text(
               description,
@@ -35,12 +41,12 @@ class ProjectCard extends StatelessWidget {
             HoverAnimation(
               child: TextButton(
                 onPressed: () {
-                  _launchURL(projectUrl);
+                  _launchURL('https://github.com/Jornvii/portfolio');
                 },
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('View Code'),
+                    Text('View '),
                     SizedBox(width: 4),
                     Icon(Icons.arrow_forward),
                   ],
