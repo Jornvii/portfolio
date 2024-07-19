@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/contact_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'about_me.dart';
 import 'portfolio_projects.dart';
@@ -46,7 +47,9 @@ class MyHomePage extends StatelessWidget {
           children: [
             AboutMe(),
             PortfolioProjects(),
-            Contacts(),
+            const SizedBox(height: 32),
+            ContactIcons(),
+            Contacts()
           ],
         ),
       ),
