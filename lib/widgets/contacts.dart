@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/contact_icons.dart';
 
 class Contacts extends StatelessWidget {
   const Contacts({super.key});
@@ -11,7 +10,7 @@ class Contacts extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16.0),
         child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               'Contacts',
@@ -19,7 +18,7 @@ class Contacts extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'Email: example@example.com',
+              'Email: Dom@example.com',
               style: TextStyle(fontSize: 16),
             ),
             Text(

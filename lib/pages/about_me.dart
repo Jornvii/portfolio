@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'circular_image_hover.dart';
 
 class AboutMe extends StatelessWidget {
@@ -26,16 +27,18 @@ class AboutMe extends StatelessWidget {
               ),
             ),
             SizedBox(height: 15),
-            Padding(
-              padding: EdgeInsets.only(left: 15, right: 5),
+            Center(
               child: Column(
                 children: [
-                  Text(
-                    'Hello! I am Mr. Dorm, from Business Computer Team of MBS.',
-                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      'Hello! I am Mr. Dorm, from Business Computer Team of MBS.',
+                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
+                    ),
                   ),
                   Text(
-                    'as a web and mobile app developer with a passion for creating beautiful and functional applications. I love exploring new technologies and improving my skills.',
+                    'As a web and mobile app developer with a passion for creating beautiful and functional applications. I love exploring new technologies and improving my skills.',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
                   ),
                 ],

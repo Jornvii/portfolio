@@ -24,7 +24,7 @@ class ProjectCard extends StatelessWidget {
         // height: 380,
         color: Color.fromARGB(104, 255, 193, 7),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               title,
