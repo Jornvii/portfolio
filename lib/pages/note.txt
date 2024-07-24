@@ -7,13 +7,13 @@ class EducationPage extends StatefulWidget {
 
 class _EducationPageState extends State<EducationPage> {
   int _selectedIndex = 0;
-  List<String> educationLevels = ["Secondary School", "High School", "University"];
-  List<String> schoolNames = ["Hunsen Secondary School", "XYZ High School", "University of Flutter"];
-  List<String> years = ["2008 - 2011", "2011 - 2014", "2014 - 2018"];
+  List<String> educationLevels = ["มัธยมศึกษาตอนต้น", "มัธยมศึกษาตอนปลาย", "มหาวิทยาลัย"];
+  List<String> schoolNames = ["โรงเรียนมัธยมศึกษาบ้านดอน", "โรงเรียนมัธยมศึกษาปัญญาชน", "มหาวิทยาลัยเชียงใหม่"];
+  List<String> years = ["พ.ศ. 2548 - 2551", "พ.ศ. 2551 - 2554", "พ.ศ. 2554 - 2558"];
   List<String> descriptions = [
-    "Description about secondary school education.",
-    "Description about high school education.",
-    "Description about university education."
+    "รายละเอียดเกี่ยวกับการศึกษาในระดับมัธยมศึกษาตอนต้น",
+    "รายละเอียดเกี่ยวกับการศึกษาในระดับมัธยมศึกษาตอนปลาย",
+    "รายละเอียดเกี่ยวกับการศึกษาในระดับมหาวิทยาลัย"
   ];
 
   @override

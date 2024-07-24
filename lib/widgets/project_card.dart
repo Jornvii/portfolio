@@ -8,11 +8,13 @@ class ProjectCard extends StatelessWidget {
   final String description;
   final String projectUrl;
 
-  ProjectCard(
-      {required this.title,
-      required this.img,
-      required this.description,
-      required this.projectUrl});
+  const ProjectCard({
+    super.key,
+    required this.title,
+    required this.img,
+    required this.description,
+    required this.projectUrl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,21 +23,26 @@ class ProjectCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16.0),
         width: 350,
-        // height: 380,
-        color: Color.fromARGB(104, 255, 193, 7),
+        color: const Color.fromARGB(255, 213, 228, 255),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              title,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Text(
+                title,
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(height: 8),
             Image(image: img),
             const SizedBox(height: 8),
-            Text(
-              description,
-              style: const TextStyle(fontSize: 16),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                description,
+                style: const TextStyle(fontSize: 16),
+              ),
             ),
             const SizedBox(height: 8),
             HoverAnimation(
@@ -43,13 +50,23 @@ class ProjectCard extends StatelessWidget {
                 onPressed: () {
                   _launchURL(projectUrl);
                 },
-                child: const Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text('View '),
-                    SizedBox(width: 4),
-                    Icon(Icons.arrow_forward),
-                  ],
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.white, backgroundColor: Colors.blue, 
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8), 
+                  ),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('View '),
+                      SizedBox(width: 4),
+                      Icon(Icons.arrow_forward),
+                    ],
+                  ),
                 ),
               ),
             ),

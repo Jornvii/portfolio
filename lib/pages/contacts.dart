@@ -18,16 +18,16 @@ class Contacts extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'Email: Dom@example.com',
+              'Email: Dom@gmail.com',
               style: TextStyle(fontSize: 16),
             ),
             Text(
-              'Phone: +123 456 7890',
+              'Phone: +66 96939993',
               style: TextStyle(fontSize: 16),
             ),
-            // Add more contact information here
           ],
         ),
+        
       ),
     );
   }

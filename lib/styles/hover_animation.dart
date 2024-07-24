@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HoverAnimation extends StatefulWidget {
   final Widget child;
 
-  const HoverAnimation({super.key, required this.child});
+   const HoverAnimation({super.key, required this.child});
 
   @override
   _HoverAnimationState createState() => _HoverAnimationState();
